@@ -1,0 +1,11 @@
+d3.menu.multilang.listall:
+  route_name: d3.multilang.main
+  title: All languages
+  base_route: d3.multilang.main
+  parent: d3.menu.multilang
+
+d3.menu.multilang.listsite:
+  route_name: d3.multilang.site
+  title: Site languages
+  base_route: d3.multilang.main
+  weight: 2
