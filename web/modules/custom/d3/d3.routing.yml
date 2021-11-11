@@ -1,0 +1,15 @@
+d3.multilang.main:
+  path: '/multilang'
+  defaults:
+    _controller: '\Drupal\d3\Controller\MultilangController::getAllLanguages'
+    _title: 'Multilang'
+  requirements:
+    _permission: 'access content'
+
+d3.multilang.site:
+  path: '/multilang/site'
+  defaults:
+    _controller: '\Drupal\d3\Controller\MultilangController::getSiteLanguages'
+    _title: 'Site languages'
+  requirements:
+    _permission: 'access content'
