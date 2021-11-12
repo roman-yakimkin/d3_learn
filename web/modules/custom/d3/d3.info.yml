@@ -3,3 +3,6 @@ description: A custom module with scripts for D3 learning.
 package: Custom YRV
 type: module
 core_version_requirement: ^8.8.0 || ^9
+
+'interface translation project': d3
+'interface translation server pattern': modules/custom/%project/translations/%language.po
