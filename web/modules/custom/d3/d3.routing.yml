@@ -13,3 +13,11 @@ d3.multilang.site:
     _title: 'Site languages'
   requirements:
     _permission: 'access content'
+
+d3.multilang.plural:
+  path: '/multilang/plural'
+  defaults:
+    _controller: '\Drupal\d3\Controller\MultilangController::getPluralTest'
+    _title: 'Plural number'
+  requirements:
+    _permission: 'access content'
