@@ -10,3 +10,26 @@ msgstr "Языки на сайте"
 
 msgid "All languages"
 msgstr "Все языки"
+
+msgid "Plural number"
+msgstr "Множественное число"
+
+msgctxt "human body"
+msgid "1 nail"
+msgid_plural "@count nails"
+msgstr[0] "@count ноготь"
+msgstr[1] "@count ногтя"
+msgstr[2] "@count ногтей"
+
+msgctxt "tools"
+msgid "1 nail"
+msgid_plural "@count nails"
+msgstr[0] "@count гвоздь"
+msgstr[1] "@count гвоздя"
+msgstr[2] "@count гвоздей"
+
+msgid "1 nut bolt"
+msgid_plural "@count nut bolts"
+msgstr[0] "1 гайка"
+msgstr[1] "@count гайки"
+msgstr[2] "@count гаек"

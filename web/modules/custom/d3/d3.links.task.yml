@@ -9,3 +9,9 @@ d3.menu.multilang.listsite:
   title: Site languages
   base_route: d3.multilang.main
   weight: 2
+
+d3.menu.multilang.plural:
+  route_name: d3.multilang.plural
+  title: Plural number
+  base_route: d3.multilang.main
+  weight: 2

@@ -47,6 +47,33 @@ class MultilangController extends ControllerBase {
   }
 
   /**
+   * Get plural number of Russian words.
+   *
+   * @return array
+   *   The render array with words.
+   */
+  public function getPluralTest(): array {
+    $header = [
+      $this->t('Nails (tools)'),
+      $this->t('Nails (body)'),
+      $this->t('Nut bolts'),
+    ];
+    $rows = [];
+    for ($i = 2; $i <= 99; $i++) {
+      $rows[] = [
+        $this->formatPlural($i, '1 nail', '@count nails', [], ['context' => 'tools']),
+        $this->formatPlural($i, '1 nail', '@count nails', [], ['context' => 'human body']),
+        $this->formatPlural($i, '1 nut bolt', '@count nut bolts'),
+      ];
+    }
+    return [
+      '#type' => 'table',
+      '#header' => $header,
+      '#rows' => $rows,
+    ];
+  }
+
+  /**
    * Make the output table for languages.
    *
    * @param array $languages
