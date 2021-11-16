@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the d3 module.
+ */
+
+use Drupal\locale\Gettext;
+
+/**
+ * Update po - file.
+ */
+function d3_update_9201() {
+  $file = (object) [
+    'uri' => drupal_get_path('module', 'd3') . '/translations/ru.po',
+    'langcode' => 'ru',
+  ];
+  Gettext::fileToDatabase($file, [
+    'overwrite_options' => [
+      'not_customized' => TRUE,
+    ],
+  ]);
+}

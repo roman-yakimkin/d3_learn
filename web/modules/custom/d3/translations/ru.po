@@ -30,6 +30,14 @@ msgstr[2] "@count гвоздей"
 
 msgid "1 nut bolt"
 msgid_plural "@count nut bolts"
-msgstr[0] "1 гайка"
+msgstr[0] "@count гайка"
 msgstr[1] "@count гайки"
 msgstr[2] "@count гаек"
+
+msgctxt "tools"
+msgid "1 file"
+msgid_plural "@count files"
+msgstr[0] "@count напильник"
+msgstr[1] "@count напильника"
+msgstr[2] "@count напильников"
+
