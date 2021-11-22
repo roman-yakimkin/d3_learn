@@ -4,3 +4,10 @@ d3.menu.multilang:
   route_name: d3.multilang.main
   menu_name: 'main'
   weight: 10
+
+d3.menu.rest:
+  title: 'REST'
+  description: 'REST features'
+  route_name: d3.multilang.rest
+  menu_name: 'main'
+  weight: 20

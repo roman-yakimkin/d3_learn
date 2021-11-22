@@ -21,3 +21,11 @@ d3.multilang.plural:
     _title: 'Plural number'
   requirements:
     _permission: 'access content'
+
+d3.multilang.rest:
+  path: '/rest'
+  defaults:
+    _form: '\Drupal\d3\Form\QuadraticEquationForm'
+    _title: 'Quadratic equation test'
+  requirements:
+    _permission: 'access content'

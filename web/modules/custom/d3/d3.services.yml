@@ -1,0 +1,7 @@
+services:
+  quadratic_equation:
+    class: Drupal\d3\QuadraticEquation
+    arguments: ['@quadratic_equation_result']
+
+  quadratic_equation_result:
+    class: Drupal\d3\QuadraticEquationResult

@@ -15,3 +15,9 @@ d3.menu.multilang.plural:
   title: Plural number
   base_route: d3.multilang.main
   weight: 2
+
+d3.menu.rest.qeform:
+  route_name: d3.multilang.rest
+  title: Quadratic equation
+  base_route: d3.multilang.rest
+  parent: d3.menu.rest
