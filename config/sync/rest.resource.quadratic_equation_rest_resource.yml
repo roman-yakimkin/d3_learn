@@ -1,0 +1,22 @@
+uuid: 056e8f20-39ff-47cf-ae4a-9df483b3b905
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - d3
+    - serialization
+    - simple_oauth
+    - user
+id: quadratic_equation_rest_resource
+plugin_id: quadratic_equation_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth
+    - oauth2
+    - cookie

@@ -1,0 +1,10 @@
+uuid: 231b1afe-8b6c-4fd4-b713-327220ae4f81
+langcode: en
+status: true
+dependencies: {  }
+id: oauth2_role
+label: 'Oauth2 role'
+weight: 3
+is_admin: null
+permissions:
+  - 'restful get quadratic_equation_rest_resource'
