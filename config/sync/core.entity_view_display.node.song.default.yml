@@ -1,0 +1,38 @@
+uuid: 6c710514-0e3d-452e-9c52-6e0f1da63a3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.song.body
+    - field.field.node.song.field_writers
+    - node.type.song
+  module:
+    - text
+    - user
+id: node.song.default
+targetEntityType: node
+bundle: song
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_writers:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

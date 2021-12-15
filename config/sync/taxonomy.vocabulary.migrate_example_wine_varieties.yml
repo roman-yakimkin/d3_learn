@@ -1,0 +1,10 @@
+uuid: 2ece29f5-e83f-4fa2-8cee-66528eb609cb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4wp7G-IhzYtgI33DfQlm4mNx9UleyBZ2sAlaXu0Gke4
+name: 'Migrate Example Wine Varieties'
+vid: migrate_example_wine_varieties
+description: 'Wine varieties'
+weight: 0

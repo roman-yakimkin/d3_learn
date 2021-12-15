@@ -1,0 +1,37 @@
+uuid: 06db647b-36b4-47c5-8098-b8f3b9e45f1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.album.body
+    - field.field.node.album.field_artist
+    - field.field.node.album.field_songs
+    - field.field.node.album.field_year
+    - node.type.album
+  module:
+    - text
+    - user
+id: node.album.teaser
+targetEntityType: node
+bundle: album
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_artist: true
+  field_songs: true
+  field_year: true
+  langcode: true

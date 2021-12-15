@@ -1,0 +1,11 @@
+uuid: e1e59b82-cafe-4f0e-aac2-9e12a9c2cf60
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.album
+id: node.album
+target_entity_type_id: node
+target_bundle: album
+default_langcode: site_default
+language_alterable: false

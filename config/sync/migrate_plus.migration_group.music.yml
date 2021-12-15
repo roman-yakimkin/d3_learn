@@ -1,0 +1,15 @@
+uuid: e4f3d876-ea40-4411-bcd9-9079b8db6f48
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - d3
+id: music
+label: 'Music Imports'
+description: 'Import some music information from .'
+source_type: 'Custom tables'
+module: null
+shared_configuration:
+  source:
+    key: default

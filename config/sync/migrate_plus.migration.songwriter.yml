@@ -1,0 +1,28 @@
+uuid: c43f490a-f6c2-494a-9678-e8ccd732b34b
+langcode: en
+status: true
+dependencies: {  }
+id: songwriter
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - music
+migration_group: music
+label: Songwriter
+source:
+  plugin: d3_songwriter
+process:
+  name: sw_name
+  description:
+    plugin: default_value
+    default_value: ''
+  vid:
+    plugin: default_value
+    default_value: songwriters
+  parent:
+    plugin: default_value
+    default_value: 0
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: null

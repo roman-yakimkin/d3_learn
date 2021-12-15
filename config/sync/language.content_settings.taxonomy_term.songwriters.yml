@@ -1,0 +1,11 @@
+uuid: 234d55e6-962c-4a82-826c-7116f81a1d05
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.songwriters
+id: taxonomy_term.songwriters
+target_entity_type_id: taxonomy_term
+target_bundle: songwriters
+default_langcode: site_default
+language_alterable: false
