@@ -29,3 +29,30 @@ d3.multilang.rest:
     _title: 'Quadratic equation test'
   requirements:
     _permission: 'access content'
+
+d3.migrate.main:
+  path: '/migrate'
+  defaults:
+    _controller: '\Drupal\d3\Controller\MusicController::getAllSongs'
+    _title: 'Songs'
+  requirements:
+    _permission: 'access content'
+
+d3.migrate.albums:
+  path: '/migrate/albums'
+  defaults:
+    _controller: '\Drupal\d3\Controller\MusicController::getAllAlbums'
+    _title: 'Albums'
+  requirements:
+    _permission: 'access content'
+
+d3.migrate.album_by_id:
+  path: '/migrate/album/{id}'
+  defaults:
+    _controller: '\Drupal\d3\Controller\MusicController::getAlbumById'
+    _title: 'Albums'
+    id: 1
+  requirements:
+    _permission: 'access content'
+    id: \d+
+

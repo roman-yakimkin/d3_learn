@@ -6,3 +6,11 @@ core_version_requirement: ^8.8.0 || ^9
 
 'interface translation project': d3
 'interface translation server pattern': modules/custom/%project/translations/%language.po
+
+config_devel:
+  install:
+    - migrate_plus.migration.artist
+    - migrate_plus.migration.songwriter
+    - migrate_plus.migration.song
+    - migrate_plus.migration.album
+    - migrate_plus.migration_group.music

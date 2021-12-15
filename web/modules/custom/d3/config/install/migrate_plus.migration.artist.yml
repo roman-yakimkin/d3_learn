@@ -1,0 +1,27 @@
+id: artist
+label: Artist
+migration_group: music
+
+migration_tags:
+  - music
+
+source:
+  plugin: csv
+  path: /var/www/html/web/modules/custom/d3/artifacts/music.csv
+  ids: [musician]
+
+destination:
+  plugin: entity:taxonomy_term
+
+process:
+  name: musician
+  description:
+    plugin: default_value
+    default_value: ''
+  vid:
+    plugin: default_value
+    default_value: artists
+  parent:
+    plugin: default_value
+    default_value: 0
+

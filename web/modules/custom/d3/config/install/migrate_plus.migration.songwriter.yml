@@ -1,0 +1,24 @@
+id: songwriter
+label: Songwriter
+migration_group: music
+
+migration_tags:
+  - music
+
+source:
+  plugin: d3_songwriter
+
+destination:
+  plugin: entity:taxonomy_term
+
+process:
+  name: sw_name
+  description:
+    plugin: default_value
+    default_value: ''
+  vid:
+    plugin: default_value
+    default_value: songwriters
+  parent:
+    plugin: default_value
+    default_value: 0

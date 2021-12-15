@@ -21,3 +21,60 @@ function d3_update_9201() {
     ],
   ]);
 }
+
+/**
+ * Implements hook_schema().
+ */
+function d3_schema() {
+  $schema['d3_migrate_songwriters'] = [
+    'description' => 'A temporary table for songwriter migrations',
+    'fields' => [
+      'sw_name' => [
+        'description' => 'Songwriter name',
+        'type' => 'varchar',
+        'length' => 256,
+        'not null' => TRUE,
+      ],
+    ],
+    'indexes' => [
+      'sw_name' => [
+        'sw_name',
+      ],
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Implements hook_install().
+ */
+function d3_install($is_syncing) {
+  $fv = fopen('/var/www/html/web/modules/custom/d3/artifacts/music.csv', 'r');
+  if ($fv === FALSE) {
+    return;
+  }
+  $num = 0;
+  while ($data = fgetcsv($fv)) {
+    if ($num > 0) {
+      $writers_line = $data[3];
+      if (!empty($writers_line)) {
+        $writers = explode(',', $writers_line);
+        foreach ($writers as $writer) {
+          $writer = trim($writer);
+          \Drupal::database()
+            ->merge('d3_migrate_songwriters')
+            ->key('sw_name', $writer)
+            ->insertFields([
+              'sw_name' => $writer,
+            ])
+            ->updateFields([
+              'sw_name' => $writer,
+            ])
+            ->execute();
+        };
+      }
+    }
+    $num++;
+  }
+}

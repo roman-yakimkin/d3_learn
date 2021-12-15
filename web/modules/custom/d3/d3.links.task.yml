@@ -21,3 +21,21 @@ d3.menu.rest.qeform:
   title: Quadratic equation
   base_route: d3.multilang.rest
   parent: d3.menu.rest
+
+d3.menu.migrate.songs:
+  route_name: d3.migrate.main
+  title: Songs
+  base_route: d3.migrate.main
+  parent: d3.menu.migrate
+
+d3.menu.migrate.albums:
+  route_name: d3.migrate.albums
+  title: Albums
+  base_route: d3.migrate.main
+  parent: d3.menu.migrate
+
+d3.menu.migrate.album_by_id:
+  route_name: d3.migrate.album_by_id
+  title: Album by id
+  base_route: d3.migrate.main
+  parent: d3.menu.migrate

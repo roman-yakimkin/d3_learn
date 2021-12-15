@@ -11,3 +11,10 @@ d3.menu.rest:
   route_name: d3.multilang.rest
   menu_name: 'main'
   weight: 20
+
+d3.menu.migrate:
+  title: 'Migrate API'
+  description: 'Migrate API features'
+  route_name: d3.migrate.main
+  menu_name: 'main'
+  weight: 130
