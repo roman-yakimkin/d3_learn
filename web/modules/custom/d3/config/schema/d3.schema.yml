@@ -1,0 +1,21 @@
+d3.multilingual_message:
+  type: config_object
+  label: 'Multilingual message (schema)'
+  mapping:
+    type:
+      type: boolean
+      label: 'Send messages'
+    email:
+      type: email
+      label: 'E-mail address'
+    subject:
+      type: label
+      label: 'Subject'
+    frequency:
+      type: string
+      label: 'Frequency of mailing'
+    mailings:
+      type: sequence
+      label: 'Mailings list'
+      sequence:
+        type: string

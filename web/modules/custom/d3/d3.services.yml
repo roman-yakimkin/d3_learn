@@ -5,3 +5,8 @@ services:
 
   quadratic_equation_result:
     class: Drupal\d3\QuadraticEquationResult
+
+  d3config.overrider:
+    class: Drupal\d3\Config\D3ConfigOverrides
+    tags:
+      - { name: config.factory.override, priority: 5 }

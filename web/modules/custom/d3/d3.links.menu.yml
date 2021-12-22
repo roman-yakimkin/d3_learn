@@ -12,6 +12,13 @@ d3.menu.rest:
   menu_name: 'main'
   weight: 20
 
+d3.menu.config:
+  title: 'Config'
+  description: 'Config features'
+  route_name: d3.config.multilingual_message.settings
+  menu_name: 'main'
+  weight: 30
+
 d3.menu.migrate:
   title: 'Migrate API'
   description: 'Migrate API features'

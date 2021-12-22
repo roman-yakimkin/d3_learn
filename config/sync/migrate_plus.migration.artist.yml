@@ -1,7 +1,9 @@
-uuid: 4f72f8ea-85d2-4f3b-bd7a-2a5a9840ac38
+uuid: 249ae474-5c05-499b-9790-4ea9663db575
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: bngEAbueXZpXTu36OfR5Xjbn_pAsbUngELGo8bv8L8c
 id: artist
 class: null
 field_plugin_method: null

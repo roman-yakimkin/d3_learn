@@ -1,0 +1,8 @@
+type: true
+email: admin@gmail.com
+subject: 'Subject of message'
+frequency: 'week'
+mailings:
+  - mail_general
+  - mail_advanced
+  - mail_3

@@ -1,7 +1,9 @@
-uuid: c43f490a-f6c2-494a-9678-e8ccd732b34b
+uuid: 70aef5c5-d50a-436e-bd0f-4401ed669a72
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: bTlqp0pYF7viXjvhUZUdXiyrjZdYw7qkajgCE1iKsLs
 id: songwriter
 class: null
 field_plugin_method: null

@@ -1,0 +1,10 @@
+type: true
+email: admin@gmail.com
+subject: 'Subject of message'
+frequency: week
+mailings:
+  - mail_general
+  - mail_advanced
+  - mail_3
+_core:
+  default_config_hash: ydgrjBS4OMhn-X6BeHNQVbrT8OWyv3B6gsvbH2lD9IM

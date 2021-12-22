@@ -1,7 +1,9 @@
-uuid: 460a3127-f9b2-4463-9c90-7a7c70f47d25
+uuid: f1df11f9-4e4f-436c-b155-77d4d6487c19
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: hBxJH5iwWnujXA9aj4YiVIHh8OUx33MyBo3CuWp50HI
 id: song
 class: null
 field_plugin_method: null

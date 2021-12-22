@@ -1,0 +1,5 @@
+d3.multilingual_message:
+  title: 'Multilingual message tr settings'
+  base_route_name: d3.config.multilingual_message.settings
+  names:
+    - d3.multilingual_message

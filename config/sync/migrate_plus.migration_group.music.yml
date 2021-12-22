@@ -1,10 +1,12 @@
-uuid: e4f3d876-ea40-4411-bcd9-9079b8db6f48
+uuid: 90823dc6-f219-4120-8d98-09e88f4eca3f
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - d3
+_core:
+  default_config_hash: 9mDrN3TmmhVB7Ho2dLGq2tu08Br1JeKUXbEhgvQgU7c
 id: music
 label: 'Music Imports'
 description: 'Import some music information from .'

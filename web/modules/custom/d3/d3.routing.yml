@@ -56,3 +56,11 @@ d3.migrate.album_by_id:
     _permission: 'access content'
     id: \d+
 
+d3.config.multilingual_message.settings:
+  path: '/config/multilingual'
+  defaults:
+    _title: 'D3 Multilingual message settings'
+    _form: 'Drupal\d3\Form\MultilingualMessage'
+  requirements:
+    _permission: 'administer site configuration'
+

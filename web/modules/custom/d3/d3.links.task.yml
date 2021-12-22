@@ -22,6 +22,12 @@ d3.menu.rest.qeform:
   base_route: d3.multilang.rest
   parent: d3.menu.rest
 
+d3.menu.config.config_object_form:
+  route_name: 3.config.multilingual_message.settings
+  title: Config object
+  base_route: d3.menu.config
+  parent: d3.menu.config
+
 d3.menu.migrate.songs:
   route_name: d3.migrate.main
   title: Songs

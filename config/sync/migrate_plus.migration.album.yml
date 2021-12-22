@@ -1,7 +1,9 @@
-uuid: 1957d870-0826-4e3c-99f0-46d8cd09837e
+uuid: 729bd12b-f11c-489c-a46d-c9a3ad5a5e41
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: tK9SqOOoqSTm8EFIivWSx3u_LNLCzMgsejoj4BKW8_M
 id: album
 class: null
 field_plugin_method: null
