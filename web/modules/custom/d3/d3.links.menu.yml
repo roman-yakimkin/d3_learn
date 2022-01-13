@@ -19,6 +19,13 @@ d3.menu.config:
   menu_name: 'main'
   weight: 30
 
+d3.menu.services:
+  title: 'Services'
+  description: 'Config features'
+  route_name: d3.services.first
+  menu_name: 'main'
+  weight: 40
+
 d3.menu.migrate:
   title: 'Migrate API'
   description: 'Migrate API features'

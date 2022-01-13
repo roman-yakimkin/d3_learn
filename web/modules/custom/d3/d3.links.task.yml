@@ -23,10 +23,28 @@ d3.menu.rest.qeform:
   parent: d3.menu.rest
 
 d3.menu.config.config_object_form:
-  route_name: 3.config.multilingual_message.settings
+  route_name: d3.config.multilingual_message.settings
   title: Config object
   base_route: d3.menu.config
   parent: d3.menu.config
+
+d3.menu.services.simple_service:
+  route_name: d3.services.first
+  title: Example service first
+  base_route: d3.services.first
+  parent: d3.menu.services
+
+d3.menu.services.param_service:
+  route_name: d3.services.second
+  title: Example service second
+  base_route: d3.services.first
+  parent: d3.menu.services
+
+d3.menu.services.decorated_service:
+  route_name: d3.services.third
+  title: Example service third
+  base_route: d3.services.first
+  parent: d3.menu.services
 
 d3.menu.migrate.songs:
   route_name: d3.migrate.main

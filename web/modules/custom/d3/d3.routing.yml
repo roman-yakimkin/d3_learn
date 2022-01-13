@@ -64,3 +64,26 @@ d3.config.multilingual_message.settings:
   requirements:
     _permission: 'administer site configuration'
 
+d3.services.first:
+  path: '/services'
+  defaults:
+    _controller: '\Drupal\d3\Controller\ServiceController::getMessageFromServiceFirst'
+    _title: 'Services'
+  requirements:
+    _permission: 'access content'
+
+d3.services.second:
+  path: '/services/second'
+  defaults:
+    _controller: '\Drupal\d3\Controller\ServiceController::getMessageFromServiceSecond'
+    _title: 'Service second'
+  requirements:
+    _permission: 'access content'
+
+d3.services.third:
+  path: '/services/third'
+  defaults:
+    _controller: '\Drupal\d3\Controller\ServiceController::getMessageFromServiceThird'
+    _title: 'Service third'
+  requirements:
+    _permission: 'access content'
